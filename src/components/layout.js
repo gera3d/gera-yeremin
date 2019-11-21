@@ -45,7 +45,7 @@ export default ({ children, location }) => (
         header = (
           <div
             style={{
-              backgroundColor: '#e2e2e2',
+              backgroundColor: '#fff',
               backgroundImage: `url("${homgePageHero}?w=2000")`,
               backgroundSize: 'contain',
               backgroundPosition: 'center right',
