@@ -56,6 +56,7 @@ export default ({ children, location }) => (
               position: 'relative',
               marginBottom: `${rhythm(1.5)}`,
               backgroundRepeat: 'no-repeat',
+              borderBottom: '34px solid',
             }}
           >
             <h1
