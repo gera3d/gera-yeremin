@@ -6,9 +6,13 @@ import cosmicjsLogo from '../../static/cosmicjs.svg'
 import gatsbyLogo from '../../static/gatsby.png'
 import { rhythm, scale } from '../utils/typography'
 
+
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
+
+// Import css
+import '../../src/styles/global.css'
 
 export default ({ children, location }) => (
   <StaticQuery
@@ -41,14 +45,17 @@ export default ({ children, location }) => (
         header = (
           <div
             style={{
-              backgroundColor: '#007ACC',
+              backgroundColor: '#e2e2e2',
               backgroundImage: `url("${homgePageHero}?w=2000")`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'right',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center right',
               width: '100%',
-              height: rhythm(14),
+              height: '100%',
+              display: 'flex',
+              flexDirection: "column",
               position: 'relative',
               marginBottom: `${rhythm(1.5)}`,
+              backgroundRepeat: 'no-repeat',
             }}
           >
             <h1
